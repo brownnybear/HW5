@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.rattanaporn.screpe.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="Create Your Own Crepe"
+            android:textColor="#FFE4E1"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="To Get Started, Choose  Base Flavor from the Following :"
+            android:textColor="#FFFF" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_batter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Batter.. 20฿"
+                android:textColor="#FFE4E1"/>
+
+            <RadioButton
+                android:id="@+id/radio_whip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Batter and Whipped Cream.. 35฿"
+                android:textColor="#E6E6FA"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="STEP 1 : Choose the Fruits (Up to Two).. 15฿ "
+            android:textColor="#FFFF" />
+
+
+        <CheckBox
+            android:id="@+id/checkbox_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Strawberry"
+            android:textColor="#FF9999"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Bluebeery"
+            android:textColor="#CC99CC" />
+
+        <CheckBox
+            android:id="@+id/checkbox_f3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Kiwi"
+            android:textColor="#F0FFF0" />
+
+        <CheckBox
+            android:id="@+id/checkbox_f4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Orange"
+            android:textColor="#FFCC99" />
+
+        <CheckBox
+            android:id="@+id/checkbox_f5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Banana"
+            android:textColor="#FFFACD" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="STEP 2 : Choose the Sauces.. 15฿ "
+            android:textColor="#FFFF" />
+
+        <CheckBox
+            android:id="@+id/checkbox_s1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Nutella"
+            android:textColor="#F0FFF0" />
+
+        <CheckBox
+            android:id="@+id/checkbox_s2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Chocolate"
+            android:textColor="#F0FFF0" />
+
+        <CheckBox
+            android:id="@+id/checkbox_s3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Caramel"
+            android:textColor="#F0FFF0" />
+
+        <CheckBox
+            android:id="@+id/checkbox_s4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="็Honey"
+            android:textColor="#F0FFF0" />
+
+        <CheckBox
+            android:id="@+id/checkbox_s5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Red bean"
+            android:textColor="#F0FFF0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="STEP 3 : Choose the Toppings.. 15฿ "
+            android:textColor="#FFFF" />
+
+        <CheckBox
+            android:id="@+id/checkbox_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Almonds"
+            android:textColor="#FFB6C1" />
+
+        <CheckBox
+            android:id="@+id/checkbox_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Marshmallow"
+            android:textColor="#FFB6C1" />
+
+        <CheckBox
+            android:id="@+id/checkbox_t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Ceseal"
+            android:textColor="#FFB6C1" />
+
+        <CheckBox
+            android:id="@+id/checkbox_t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Oreo"
+            android:textColor="#FFB6C1" />
+
+        <CheckBox
+            android:id="@+id/checkbox_t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Walnuts"
+            android:textColor="#FFB6C1" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="FINAL STEP : Choose Ice Cream.. 15฿ "
+            android:textColor="#FFFF" />
+
+        <CheckBox
+            android:id="@+id/checkbox_i1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Vanilla"
+            android:textColor="#D8BFD8" />
+
+        <CheckBox
+            android:id="@+id/checkbox_i2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Choco"
+            android:textColor="#D8BFD8" />
+
+        <CheckBox
+            android:id="@+id/checkbox_i3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="Cookie and Cream"
+            android:textColor="#D8BFD8" />
+
+        <CheckBox
+            android:id="@+id/checkbox_i4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="onCheckboxClicked"
+            android:text="็Strawberry"
+            android:textColor="#D8BFD8" />
+
+        <CheckBox
+            android:id="@+id/checkbox_i5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Matcha"
+            android:textColor="#D8BFD8" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/button_selector"
+            android:text="DONE"
+            android:textColor="#FFFF"
+            android:textSize="20dp"
+            android:onClick="finalClicked" />
+
+        <TextView
+            android:id="@+id/fruitt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text=""
+            android:textStyle="bold|italic"
+            android:textColor="#c77baf"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/summ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text=""
+            android:textStyle="bold|italic"
+            android:textColor="#483D8B"
+            android:gravity="center"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

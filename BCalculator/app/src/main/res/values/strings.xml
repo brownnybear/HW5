@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn7">Button</string>
+</resources>
